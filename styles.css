@@ -1,32 +1,61 @@
-.main {
+div, header, footer, section, aside {
+    padding: 10px 10px;
+    margin: 2px;
+        }
+
+main {
     width: 100%;
-    height: 100vh;
+    background-color: black;
+    }
+header {
     
-   
-}
-.header {
-    width: 100%;
-    height: 20vh;
     background-color: blue;
 }
 
 .hero {
-    width: 100%;
-    height: 20vh;
+    
     background-color: red;
 }
 .content {
-    width: 100%;
-    height: 20vh;
+    
     background-color: green;
+    
+    
 }
 .sidebar {
-    width: 100%;
-    height: 20vh;
+    
     background-color: pink;
 }
-.footer {
-    width: 100%;
-    height: 20vh;
+footer {
+    margin: 0;
     background-color: gray;
 }
+.container {
+    display: flex;
+    flex-direction: column;
+    
+}
+@media only screen and (min-width: 600px) {
+    
+    .container {
+        flex-direction: row;
+    }
+} 
+
+     
+
+    
+    
+    
+    
+
+@media only screen and (min-width: 900px) {
+   
+    .container {
+        margin: 0 100px;
+    }
+    .hero {
+        margin: 0 100px;
+    }
+}
+
